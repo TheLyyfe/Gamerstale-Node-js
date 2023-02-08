@@ -1,0 +1,20 @@
+
+{% extends "../base.twig" %}
+{% block title %}
+	<title>Gamerstale - Connexion</title>
+{% endblock %}
+
+{% block header %}
+	{% include "../layouts/_nav.twig" %}
+{% endblock %}
+
+
+{% block main %}
+	<form action="/login" method="POST">
+		<label for="surname">Pseudo</label>
+		<input type="text" id="surname" name="surname">
+		<label for="password">Mot de Passe</label>
+		<input type="password" id="password" name="password">
+		<button type="submit">Valider</button>
+	</form>
+{% endblock %}

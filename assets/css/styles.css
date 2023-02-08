@@ -1,0 +1,24 @@
+body{
+    background-color: #181818!important;
+}
+
+.navbar{
+    background-color: #000000;
+}
+
+a, label, h2{
+    color: white!important;
+}
+
+.navbar-brand{
+    justify-content: center;
+}
+
+#navbarNav{
+    display: flex;
+    justify-content: end;
+}
+
+/* .navimg{
+    width: 15%;
+} */
