@@ -120,7 +120,15 @@ userRouter.get('/logout', async (req, res) => {
    }
    
 })
-
+userRouter.get('/profil', async (req, res) => {
+   try {
+      let user = await UserModel.findOne({ _id: req.session.userId });
+      res.render('templates/profil.twig')
+   } catch (err) {
+      console.log(err);
+      res.send(err);
+   }
+})
 
 module.exports = userRouter
 

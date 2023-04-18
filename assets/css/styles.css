@@ -6,7 +6,7 @@ body{
     background-color: #000000;
 }
 
-a, label, h2{
+a, label, h2, p{
     color: white!important;
 }
 
@@ -19,6 +19,6 @@ a, label, h2{
     justify-content: end;
 }
 
-/* .navimg{
+.navimg{
     width: 15%;
-} */
+}
